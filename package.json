@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose"
+    "test-watch": "jest --watchAll --verbose",
+    "lint": "eslint .",
+    "start": "node .",
+    "watch": "nodemon ."
   },
   "jest": {
     "testEnvironment": "node"
@@ -16,12 +19,14 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
+    "eslint": "^6.8.0",
     "express": "^4.17.1",
     "jest": "^24.8.0",
     "mongodb-memory-server": "^5.1.5",
     "mongoose": "^5.6.1",
     "mongoose-schema-jsonschema": "^1.2.1",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.2",
     "supertest": "^4.0.2",
     "uuid": "^3.3.2"
   }
